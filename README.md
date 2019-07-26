@@ -3,6 +3,7 @@
 ## Table of Contents
 * Project description
 * Development Tools
+* Discussion
 * Result and Conclusion
 * References
 
@@ -13,7 +14,7 @@ Building a CNN model using transfer learning (DenseNet 201, VGG16 and ResNet 50)
 * PyTorch Framework
 
 ## Discussion
-The size of the dataset is not too big. Total dataset is 3355. I splitted the dataset into training dataset 80%(2684), validation 10%(335), and testing 10%(336).  
+The size of the dataset is small. Total dataset is 3355. I splitted the dataset into training dataset 80%(2684), validation 10%(335), and testing 10%(336).  
 My first attempt was using DenseNet 201 (learning rate of 0.01) and froze all the weights from the pretrained network. The accuracy was very poor, around 50%. Then, I tried another model, VGG16 (learning rate 0.01) and froze all the weights from the pretrained network, accuracy was 39%. ResNet 50 showed the same poor accuracy of 50%.
 It showed that the dataset is totally different from original image database.
 Then, I didn't freeze the weight parameter of the pretrained network. I set it to True and reached the accuracy of 80%.
